@@ -85,6 +85,6 @@ IF %ERRORLEVEL% NEQ 0 (
 echo Download complete!
 
 :: Send an email with the CSV file as an attachment using PowerShell
-powershell -ExecutionPolicy Bypass -Command "Send-MailMessage -To 'richard.dib@employsure.com.au' -From 'richard.dib@employsure.com.au' -Subject 'PostCallSurveyAutomate' -Body 'Please find the attached CSV file. sigrem' -SmtpServer 'employsure-com-au.mail.protection.outlook.com' -Attachments 'exported_data.csv'"
+powershell -ExecutionPolicy Bypass -Command "Send-MailMessage -To 'addyouremail' -From 'addyouremail' -Subject 'PostCallSurveyAutomate' -Body 'Please find the attached CSV file. sigrem' -SmtpServer 'add your SMTP' -Attachments 'exported_data.csv'"
 
 ENDLOCAL
